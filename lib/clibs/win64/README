@@ -1,5 +1,7 @@
-These shared libraries were taken from the automated nightly
-build of epics-base-7.0-win64, run on 2021-May-17
+The shared library is built with wrapper.cpp in the following environment,
 
-The DLLs use the Microsoft VCRUNTIME140.dll series, and so should 
-work with all supported versions of Python 3 on Windows 10.
+* Windows 10, x86_64
+* strawberry-perl-5.32.1.1
+* EPICS base 7.0.7
+* PVXS 1.2.0
+* libevent 2.1.12

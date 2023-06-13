@@ -1,0 +1,6 @@
+LIB_SRCS += clientdiscover.cpp
+
++ # C wrapper
++ LIB_SRCS += wrapper.cpp
+
+LIB_LIBS += Com

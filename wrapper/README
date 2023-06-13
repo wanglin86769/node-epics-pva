@@ -1,0 +1,3 @@
+wrapper.cpp is a C wrapper which is intended to be placed into pvxs/src and built into the pvxs shared library.
+
+Array data format also needs to be modified in sharedarray.cpp file.
