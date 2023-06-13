@@ -7,6 +7,20 @@ Three simple interfaces are provided in the client library, get() and put() are 
  * put()
  * monitor()
 
+# Requirements
+
+## A recent Node.js version is required and the following versions have been tested,
+
+* Node.js 14.21.3
+
+* Node.js 15.14.0
+
+* Node.js 16.19.0
+
+* Node.js 17.9.1
+
+* Node.js 18.13.0
+
 # Supported platforms
 
 * Windows x86_64
@@ -66,7 +80,8 @@ setTimeout(function() {
 
 # Note
 
-Since get() and put() are simple blocking implementation, if PVs are not available, the main thread of Node.js will block.
+1. Since get() and put() are simple blocking implementation, if PVs are not available, the main thread of Node.js will block.
+2. Since only epics:nt/NTScalar:1.0 and epics:nt/NTScalarArray:1.0 data types are tested, other data types may not be parse successfully.
 
 # License
 MIT license
