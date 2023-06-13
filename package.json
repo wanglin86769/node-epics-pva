@@ -1,5 +1,31 @@
 {
+  "name": "node-epics-pva",
+  "version": "0.0.1",
+  "description": "EPICS pvAccess client for Node.js",
+  "keywords": [
+    "EPICS",
+    "pvAccess",
+    "PV Access",
+    "Node.js",
+    "JavaScript",
+    "FFI"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wanglin86769/node-epics-pva.git"
+  },
+  "homepage": "https://github.com/wanglin86769/node-epics-pva",
+  "author": "Lin Wang <wanglin@ihep.ac.cn>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "license": "MIT",
   "dependencies": {
     "koffi": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
