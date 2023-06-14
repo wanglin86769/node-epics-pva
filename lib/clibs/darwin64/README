@@ -1,21 +1,6 @@
-These shared libraries were built using
+The shared library is built with wrapper.cpp in the following environment,
 
-Epics Base 3.16.2 on Mac OS X 10.14.1 with
-Apple LLVM version 10.0.0 (clang-1000.11.45.5) Target: x86_64-apple-darwin18.2.0
-
-and with Perl from MacPorts.
-
-Readline support was turned off by setting
-   COMMANDLINE_LIBRARY =
-
-in
-   CONFIG_SITE.darwinCommon.darwinCommon
-
-
-and then
-   mv libca.3.16.2.dylib libca.dylib
-   mv libCom.3.16.2.dylib libComPYEPICS.dylib
-   install_name_tool -id libca.dylib  libca.dylib
-   install_name_tool -id libComPYEPICS.dylib  libComPYEPICS.dylib
-   install_name_tool -add-rpath . libca.dylib
-   install_name_tool -change libComPYEPICS.dylib @loader_path/./libComPYEPICS.dylib libca.dylib
+* macOS Catalina, x86_64
+* EPICS base 7.0.7
+* PVXS 1.2.0
+* libevent 2.1.12

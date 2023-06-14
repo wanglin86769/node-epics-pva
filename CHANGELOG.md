@@ -2,6 +2,10 @@
 
 ## Version history of node-epics-pva
 
+### v0.0.3
+
+- Supports macOS platform
+
 ### v0.0.2
 
 - Supports Linux platform
