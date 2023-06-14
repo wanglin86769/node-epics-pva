@@ -2,7 +2,7 @@
 
 ## Version history of node-epics-pva
 
-### v0.1.0
+### v0.1.1
 
 - Added performance test
 
