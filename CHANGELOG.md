@@ -2,6 +2,10 @@
 
 ## Version history of node-epics-pva
 
+### v0.1.0
+
+- Added performance test
+
 ### v0.0.3
 
 - Supports macOS platform
