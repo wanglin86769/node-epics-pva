@@ -119,67 +119,100 @@ Accessing the calc and waveform records above will return the following JSON dat
 
 ```json
 {
-  id: 'epics:nt/NTScalar:1.0',
-  value: 4,
-  alarm: { id: 'alarm_t', severity: 1, status: 1, message: 'LOW' },
-  timeStamp: { secondsPastEpoch: 1686711684, nulloseconds: 480309379, userTag: 0 },
-  display: {
-    limitLow: 0,
-    limitHigh: 10,
-    description: 'Counter',
-    units: 'Counts',
-    precision: 0,
-    form: { id: 'enum_t', index: 0, choices: [Array] }
-  },
-  control: { id: 'control_t', limitLow: 0, limitHigh: 10, minStep: 0 },
-  valueAlarm: {
-    id: 'valueAlarm_t',
-    active: 0,
-    lowAlarmLimit: 2,
-    lowWarningLimit: 4,
-    highWarningLimit: 6,
-    highAlarmLimit: 8,
-    lowAlarmSeverity: 0,
-    lowWarningSeverity: 0,
-    highWarningSeverity: 0,
-    highAlarmSeverity: 0,
-    hysteresis: 0
-  }
+	"id": "epics:nt/NTScalar:1.0",
+	"value": 43,
+	"alarm": {
+		"id": "alarm_t",
+		"severity": 2,
+		"status": 1,
+		"message": "HIHI"
+	},
+	"timeStamp": {
+		"secondsPastEpoch": 1686719557,
+		"nulloseconds": 144609643,
+		"userTag": 0
+	},
+	"display": {
+		"limitLow": 0,
+		"limitHigh": 10,
+		"description": "Counter",
+		"units": "Counts",
+		"precision": 0,
+		"form": {
+			"id": "enum_t",
+			"index": 0,
+			"choices": ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
+		}
+	},
+	"control": {
+		"id": "control_t",
+		"limitLow": 0,
+		"limitHigh": 10,
+		"minStep": 0
+	},
+	"valueAlarm": {
+		"id": "valueAlarm_t",
+		"active": 0,
+		"lowAlarmLimit": 2,
+		"lowWarningLimit": 4,
+		"highWarningLimit": 6,
+		"highAlarmLimit": 8,
+		"lowAlarmSeverity": 0,
+		"lowWarningSeverity": 0,
+		"highWarningSeverity": 0,
+		"highAlarmSeverity": 0,
+		"hysteresis": 0
+	}
 }
 
 ```
 
 ```json
 {
-  id: 'epics:nt/NTScalarArray:1.0',
-  value: [
-    1, 2, 3, 4,
-    5, 6, 7, 8
-  ],
-  alarm: { id: 'alarm_t', severity: 3, status: 2, message: 'UDF' },
-  timeStamp: { secondsPastEpoch: 631152000, nulloseconds: 0, userTag: 0 },
-  display: {
-    limitLow: 0,
-    limitHigh: 0,
-    description: '',
-    units: '',
-    precision: 0,
-    form: { id: 'enum_t', index: 0, choices: [Array] }
-  },
-  control: { id: 'control_t', limitLow: 0, limitHigh: 0, minStep: 0 },
-  valueAlarm: {
-    id: 'valueAlarm_t',
-    active: 0,
-    lowAlarmLimit: null,
-    lowWarningLimit: null,
-    highWarningLimit: null,
-    highAlarmLimit: null,
-    lowAlarmSeverity: 0,
-    lowWarningSeverity: 0,
-    highWarningSeverity: 0,
-    highAlarmSeverity: 0,
-    hysteresis: 0
-  }
+	"id": "epics:nt/NTScalarArray:1.0",
+	"value": [1, 2, 3, 4, 5, 6, 7, 8],
+	"alarm": {
+		"id": "alarm_t",
+		"severity": 3,
+		"status": 2,
+		"message": "UDF"
+	},
+	"timeStamp": {
+		"secondsPastEpoch": 631152000,
+		"nulloseconds": 0,
+		"userTag": 0
+	},
+	"display": {
+		"limitLow": 0,
+		"limitHigh": 0,
+		"description": "",
+		"units": "",
+		"precision": 0,
+		"form": {
+			"id": "enum_t",
+			"index": 0,
+			"choices": ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
+		}
+	},
+	"control": {
+		"id": "control_t",
+		"limitLow": 0,
+		"limitHigh": 0,
+		"minStep": 0
+	},
+	"valueAlarm": {
+		"id": "valueAlarm_t",
+		"active": 0,
+		"lowAlarmLimit": null,
+		"lowWarningLimit": null,
+		"highWarningLimit": null,
+		"highAlarmLimit": null,
+		"lowAlarmSeverity": 0,
+		"lowWarningSeverity": 0,
+		"highWarningSeverity": 0,
+		"highAlarmSeverity": 0,
+		"hysteresis": 0
+	}
 }
 
 ```
